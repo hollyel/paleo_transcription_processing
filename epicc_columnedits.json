@@ -1,0 +1,366 @@
+[
+  {
+    "op": "core/column-addition",
+    "description": "Create column IdeComments_tab at index 5 based on column Taxonomy using expression jython:if value is not None:\n return \"ID transcribed from label and not verified. Verbatim taxonomy: \"+value\nelse:\n return None",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "IdeComments_tab",
+    "columnInsertIndex": 5,
+    "baseColumnName": "Taxonomy",
+    "expression": "jython:if value is not None:\n return \"ID transcribed from label and not verified. Verbatim taxonomy: \"+value\nelse:\n return None",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column IdeConfidence_tab at index 5 based on column Taxonomy using expression jython:if value is not None:\n return \"Unverified\"\nelse:\n return None",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "IdeConfidence_tab",
+    "columnInsertIndex": 5,
+    "baseColumnName": "Taxonomy",
+    "expression": "jython:if value is not None:\n return \"Unverified\"\nelse:\n return None",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column IdeFiledAs_tab at index 5 based on column Taxonomy using expression jython:if value is not None:\n return \"No\"\nelse:\n return None",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "IdeFiledAs_tab",
+    "columnInsertIndex": 5,
+    "baseColumnName": "Taxonomy",
+    "expression": "jython:if value is not None:\n return \"No\"\nelse:\n return None",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column ColParticipantRole_tab(1) at index 13 based on column Collector 1 using expression jython:if value is not None:\n    return \"Collector\"\nelse:\n    return None",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "ColParticipantRole_tab(1)",
+    "columnInsertIndex": 13,
+    "baseColumnName": "Collector 1",
+    "expression": "jython:if value is not None:\n    return \"Collector\"\nelse:\n    return None",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column ColParticipantRole_tab(2) at index 15 based on column Collector 2 using expression jython:if value is not None:\n return \"Collector\"\nelse:\n return None",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "ColParticipantRole_tab(2)",
+    "columnInsertIndex": 15,
+    "baseColumnName": "Collector 2",
+    "expression": "jython:if value is not None:\n return \"Collector\"\nelse:\n return None",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column ColParticipantRole_tab(3) at index 15 based on column Collector 3 using expression jython:if value is not None:\n return \"Collector\"\nelse:\n return None",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "ColParticipantRole_tab(3)",
+    "columnInsertIndex": 15,
+    "baseColumnName": "Collector 3",
+    "expression": "jython:if value is not None:\n return \"Collector\"\nelse:\n return None",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column ColParticipantRole_tab(3) at index 15 based on column Collector 3 using expression jython:if value is not None:\n return \"Collector\"\nelse:\n return None",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "ColParticipantRole_tab(4)",
+    "columnInsertIndex": 15,
+    "baseColumnName": "Collector 4",
+    "expression": "jython:if value is not None:\n return \"Collector\"\nelse:\n return None",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column NteType_tab(+ group='ledger') at index 25 based on column NteText0(+ group='ledger') using expression jython:if value is not None: \n    return \"Comment\"\nelse:\n    return None",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "NteType_tab(+ group='ledger')",
+    "columnInsertIndex": 25,
+    "baseColumnName": "NteText0(+ group='ledger')",
+    "expression": "jython:if value is not None: \n    return \"Comment\"\nelse:\n    return None",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column NteMetadata_tab(+ group='ledger') at index 25 based on column NteText0(+ group='ledger') using expression jython:if value is not None:\n    return \"Yes\"\nelse:\n    return None",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "NteMetadata_tab(+ group='ledger')",
+    "columnInsertIndex": 25,
+    "baseColumnName": "NteText0(+ group='ledger')",
+    "expression": "jython:if value is not None:\n    return \"Yes\"\nelse:\n    return None",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column NteDate0(+ group='ledger') at index 25 based on column NteText0(+ group='ledger') using expression jython:if value is not None:\n    return \"08-Dec-2017\"\nelse:\n    return None",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "NteDate0(+ group='ledger')",
+    "columnInsertIndex": 25,
+    "baseColumnName": "NteText0(+ group='ledger')",
+    "expression": "jython:if value is not None:\n    return \"08-Dec-2017\"\nelse:\n    return None",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column NteAttributedToRef_nesttab(+ group='ledger':1).irn at index 25 based on column NteText0(+ group='ledger') using expression jython:if value is not None:\n    return \"10214970\"\nelse:\n    return None",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "NteAttributedToRef_nesttab(+ group='ledger':1).irn",
+    "columnInsertIndex": 25,
+    "baseColumnName": "NteText0(+ group='ledger')",
+    "expression": "jython:if value is not None:\n    return \"10214970\"\nelse:\n    return None",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column NotNmnhText0(+ group='additional') using expression jython:if value is not None:  \n    return \"Additional label information: \" + value\nelse:  \n    return None",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NotNmnhText0(+ group='additional')",
+    "expression": "jython:if value is not None:  \n    return \"Additional label information: \" + value\nelse:  \n    return None",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column NotNmnhText0(+group='litho') using expression jython:if value is not None:\n    return \"Verbatim Lithostratigraphy: \" + value\nelse:\n    return None",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NotNmnhText0(+group='litho')",
+    "expression": "jython:if value is not None:\n    return \"Verbatim Lithostratigraphy: \" + value\nelse:\n    return None",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column NotNmnhWeb_tab(+ group='additional') at index 32 based on column NotNmnhText0(+ group='additional') using expression jython:if value is not None:\n    return \"Yes\"\nelse:\n    return None",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "NotNmnhWeb_tab(+ group='additional')",
+    "columnInsertIndex": 32,
+    "baseColumnName": "NotNmnhText0(+ group='additional')",
+    "expression": "jython:if value is not None:\n    return \"Yes\"\nelse:\n    return None",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column NotNmnhType_tab(+ group='additional') at index 32 based on column NotNmnhText0(+ group='additional') using expression jython:if value is not None:\n    return \"Specimen Remarks\"\nelse:\n    return None",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "NotNmnhType_tab(+ group='additional')",
+    "columnInsertIndex": 32,
+    "baseColumnName": "NotNmnhText0(+ group='additional')",
+    "expression": "jython:if value is not None:\n    return \"Specimen Remarks\"\nelse:\n    return None",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column NotNmnhDate0(+ group='additional') at index 32 based on column NotNmnhText0(+ group='additional') using expression jython:if value is not None:\n    return \"08-Dec-2017\"\nelse:\n    return None",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "NotNmnhDate0(+ group='additional')",
+    "columnInsertIndex": 32,
+    "baseColumnName": "NotNmnhText0(+ group='additional')",
+    "expression": "jython:if value is not None:\n    return \"08-Dec-2017\"\nelse:\n    return None",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column NotNmnhAttributedToRef_nesttab(+ group='additional':1).irn at index 32 based on column NotNmnhText0(+ group='additional') using expression jython:if value is not None:\n   return \"10214970\"\nelse:\n   return None",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "NotNmnhAttributedToRef_nesttab(+ group='additional':1).irn",
+    "columnInsertIndex": 32,
+    "baseColumnName": "NotNmnhText0(+ group='additional')",
+    "expression": "jython:if value is not None:\n   return \"10214970\"\nelse:\n   return None",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column NotNmnhType_tab(+group='litho') at index 31 based on column NotNmnhText0(+group='litho') using expression jython:if value is not None:\n    return \"Stratigraphic Remarks\"\nelse:\n    return None",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "NotNmnhType_tab(+group='litho')",
+    "columnInsertIndex": 31,
+    "baseColumnName": "NotNmnhText0(+group='litho')",
+    "expression": "jython:if value is not None:\n    return \"Stratigraphic Remarks\"\nelse:\n    return None",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column NotNmnhWeb_tab(+group='litho') at index 31 based on column NotNmnhText0(+group='litho') using expression jython:if value is not None:\n    return \"Yes\"\nelse:\n    return None",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "NotNmnhWeb_tab(+group='litho')",
+    "columnInsertIndex": 31,
+    "baseColumnName": "NotNmnhText0(+group='litho')",
+    "expression": "jython:if value is not None:\n    return \"Yes\"\nelse:\n    return None",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column NotNmnhDate0(+group='litho') at index 31 based on column NotNmnhText0(+group='litho') using expression jython:if value is not None:\n    return \"08-Dec-2017\"\nelse:\n    return None",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "NotNmnhDate0(+group='litho')",
+    "columnInsertIndex": 31,
+    "baseColumnName": "NotNmnhText0(+group='litho')",
+    "expression": "jython:if value is not None:\n    return \"08-Dec-2017\"\nelse:\n    return None",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column NotNmnhAttributedToRef_nesttab(+ group='litho':1).irn at index 31 based on column NotNmnhText0(+group='litho') using expression jython:if value is not None:\n    return \"10214970\"\nelse:\n    return None",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "NotNmnhAttributedToRef_nesttab(+ group='litho':1).irn",
+    "columnInsertIndex": 31,
+    "baseColumnName": "NotNmnhText0(+group='litho')",
+    "expression": "jython:if value is not None:\n    return \"10214970\"\nelse:\n    return None",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column NteText0(+ group='notebook') using expression grel:if(isNull(cells[\"NteText0(+ group='notebook')\"]), null ,\"Collector Notes: Notebook \" + cells[\"NteText0(+ group='notebook')\"].value) + if(isNull(cells[\"Pages\"]), \" \",\" Page \" + cells[\"Pages\"].value)",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NteText0(+ group='notebook')",
+    "expression": "grel:if(isNull(cells[\"NteText0(+ group='notebook')\"]), null ,\"Collector Notes: Notebook \" + cells[\"NteText0(+ group='notebook')\"].value) + if(isNull(cells[\"Pages\"]), \" \",\" Page \" + cells[\"Pages\"].value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column NteMetadata_tab(+ group='notebook') at index 42 based on column NteText0(+ group='notebook') using expression jython:if value is not None:\n    return \"Yes\"\nelse:\n    return None",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "NteMetadata_tab(+ group='notebook')",
+    "columnInsertIndex": 42,
+    "baseColumnName": "NteText0(+ group='notebook')",
+    "expression": "jython:if value is not None:\n    return \"Yes\"\nelse:\n    return None",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column NteType_tab(+ group='notebook') at index 42 based on column NteText0(+ group='notebook') using expression jython:if value is not None:\n    return \"Collection Events Notes\"\nelse:\n    return None",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "NteType_tab(+ group='notebook')",
+    "columnInsertIndex": 42,
+    "baseColumnName": "NteText0(+ group='notebook')",
+    "expression": "jython:if value is not None:\n    return \"Collection Events Notes\"\nelse:\n    return None",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column NteDate0(+ group='notebook') at index 42 based on column NteText0(+ group='notebook') using expression jython:if value is not None:\n    return \"08-Dec-2017\"\nelse:\n    return None",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "NteDate0(+ group='notebook')",
+    "columnInsertIndex": 42,
+    "baseColumnName": "NteText0(+ group='notebook')",
+    "expression": "jython:if value is not None:\n    return \"08-Dec-2017\"\nelse:\n    return None",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column NteAttributedToRef_nesttab(+ group='notebook':1).irn at index 42 based on column NteText0(+ group='notebook') using expression jython:if value is not None:\n    return \"10214970\"\nelse:\n    return None",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "NteAttributedToRef_nesttab(+ group='notebook':1).irn",
+    "columnInsertIndex": 42,
+    "baseColumnName": "NteText0(+ group='notebook')",
+    "expression": "jython:if value is not None:\n    return \"10214970\"\nelse:\n    return None",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column CatOtherNumbersType_tab(+ group='cat') at index 48 based on column CatOtherNumbersValue_tab(+ group='cat') using expression jython:if value is not None:\n     return \"Old Catalog Number\"\nelse:\n     return None",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "CatOtherNumbersType_tab(+ group='cat')",
+    "columnInsertIndex": 48,
+    "baseColumnName": "CatOtherNumbersValue_tab(+ group='cat')",
+    "expression": "jython:if value is not None:\n     return \"Old Catalog Number\"\nelse:\n     return None",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column CatOtherNumbersType_tab(+ group='field') at index 51 based on column /   using expression jython:if value is not None:\n     return \"Field Number\"\nelse:\n     return None",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "CatOtherNumbersType_tab(+ group='field')",
+    "columnInsertIndex": 51,
+    "baseColumnName": "CatOtherNumbersValue_tab(+ group='field')",
+    "expression": "jython:if value is not None:\n     return \"Field Number\"\nelse:\n     return None",
+    "onError": "set-to-blank"
+  }
+]
