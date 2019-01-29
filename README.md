@@ -1,5 +1,5 @@
 # Processing Transcription Data
-## Department of Paleobiology, Smithsonian National Museum of Natural History
+### Department of Paleobiology, Smithsonian National Museum of Natural History
 
 This respository serves as a resource for information about the tools and procedures used by The Department of Paleobiology (Paleo) to process data transcribed from labels during a mass digitization project that took place November 2017-May 2018. The project was completed in support of the Eastern Pacific Invertebrate Communities of the Cenozoic (EPICC) thematic collections network in collaboration with the Smithsonian Digitization Program Office.
 
