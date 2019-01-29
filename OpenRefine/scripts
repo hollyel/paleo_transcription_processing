@@ -1,0 +1,23 @@
+# Adding dependency fields
+Many data fields within a database have additional fields that should be included if a value is entered. 
+This script creates a new column that is populated based on the cells in the source column that have a value. 
+
+Initiate: Edit column -> Add column based on this column
+Language: Jython
+Base Column:Taxonomy
+New Column: IdeConfidence_tab
+New Column Value: Unverified
+Script:
+if value i not None:
+    return "Unverified"
+else:
+    return None
+
+
+
+
+
+#Concatenating two columns
+There
+Language:
+if(isNull(cells["NteText0(+ group='notebook')"]), null ,"Collector Notes: Notebook " + cells["NteText0(+ group='notebook')"].value) + if(isNull(cells["Pages"]), " "," Page " + cells["Pages"].value)
