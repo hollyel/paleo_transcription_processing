@@ -18,6 +18,6 @@ else:
 
 
 #Concatenating two columns
-There
-Language:
+
+Language: GREL
 if(isNull(cells["NteText0(+ group='notebook')"]), null ,"Collector Notes: Notebook " + cells["NteText0(+ group='notebook')"].value) + if(isNull(cells["Pages"]), " "," Page " + cells["Pages"].value)
